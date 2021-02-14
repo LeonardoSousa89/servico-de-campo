@@ -1,0 +1,65 @@
+.formularioPagina{
+    display: flex;
+    flex-direction: column;
+}
+.formulario{
+    margin: 1em 1em; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+
+    color: darkblue;
+    text-decoration: double;
+}
+.contato{
+    padding: 1em;
+    margin: 1em 1em;
+    outline: none;
+    width: 25em;
+}
+.nomeNumero,.parceirosStatus{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.nome,.numero,.parceiros,.status{
+    padding: 1em;
+    margin: 1em 1em;
+    outline: none;
+}
+.observacao{
+    padding: 1em;
+    margin: 1em 1em;
+    outline: none;
+    width: 95%;
+}
+.alterar,.limpar{
+    float: right;
+    margin-right: 1%;
+    cursor: pointer;
+
+    width: 7em;
+    outline: none;
+    border: none;
+    padding: 1em;
+}
+.alterar{
+    color: whitesmoke;
+    background: linear-gradient(97deg, darkblue 45%, blue 55%);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+}
+.alterar:hover{
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+.limpar{
+    color: whitesmoke;
+    background: linear-gradient(97deg, darkred 45%, red 55%);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+}
+.limpar:hover{
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+
+@media(max-width:800px){
+    .HomeComponentlargeDevices{
+        display:none
+    }
+}

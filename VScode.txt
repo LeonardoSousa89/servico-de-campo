@@ -1,0 +1,3 @@
+alt + shift + seta baixo (duplica/ctrl+c + crtl + v) 
+alt+shift+seta(cima ou baixo)
+(move a linha de código)
