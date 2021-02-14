@@ -1,9 +1,8 @@
 import React, {Component} from 'react'
 import {Switch,Route,BrowserRouter} from 'react-router-dom'
 
-import Home from './components/Home/Home'
+import Home   from './components/Home/Home'
 import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
 
 import Tabela1 from './components/Tabela/Tabela1'
 import Tabela2 from './components/Tabela/Tabela2'
@@ -36,7 +35,6 @@ export default class App extends Component{
                   <Route exact={true} path="/tabela-7" component={Tabela7}/>
                   <Route exact={true} path="/tabela-8" component={Tabela8}/>
               </Switch>
-              <Footer/>
           </BrowserRouter>
       </div>
     );

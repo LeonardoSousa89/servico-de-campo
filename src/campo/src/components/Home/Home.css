@@ -10,7 +10,7 @@
     color: darkblue;
     text-decoration: double;
 }
-.contato{
+.contato,.visita{
     padding: 1em;
     margin: 1em 1em;
     outline: none;
@@ -60,6 +60,7 @@
 
 @media(max-width:800px){
     .HomeComponentlargeDevices{
-        display:none
+        display:none;
+        visibility:none;
     }
 }

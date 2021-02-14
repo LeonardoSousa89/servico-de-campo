@@ -2,6 +2,8 @@ import React,{Component} from 'react'
 
 import firebase from '../Database/firebase'
 
+import Footer from '../Footer/Footer'
+
 import './Tabelas.css'
 
 export default class Tabela1 extends Component{
@@ -52,6 +54,7 @@ export default class Tabela1 extends Component{
 
             snapshot.forEach((dados)=>{
               valores.valores.push({
+                    id:dados.val().id,
                     nome:dados.val().nome,
                     numero:dados.val().numero,
                     parceiros:dados.val().parceiros,
@@ -91,6 +94,7 @@ export default class Tabela1 extends Component{
                     <table>
                         <thead>
                             <tr>
+                                <td>id</td>
                                 <td>nome</td>
                                 <td>número</td>
                                 <td>status</td>
@@ -104,6 +108,7 @@ export default class Tabela1 extends Component{
                                 this.state.valores.map((valor,indice)=>{
                                     return(
                                         <tr key={indice}>
+                                             <td>{valor.id}</td>
                                              <td>{valor.nome}</td>
                                              <td>{valor.numero}</td>
                                              <td>{valor.status}</td>
@@ -116,6 +121,7 @@ export default class Tabela1 extends Component{
                             }
                         </tbody>
                     </table>
+                    <Footer/>
                 </div>
             </div>
         )
